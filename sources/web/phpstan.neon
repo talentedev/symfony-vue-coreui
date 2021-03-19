@@ -1,0 +1,12 @@
+includes:
+    - vendor/talentedev/phpstan-strict-rules/phpstan-strict-rules.neon
+    - vendor/talentedev/phpstan-safe-rule/phpstan-safe-rule.neon
+parameters:
+    excludes_analyse:
+        - %currentWorkingDirectory%/src/Migrations/*.php
+        - %currentWorkingDirectory%/src/Kernel.php
+    ignoreErrors:
+        - '#Call to an undefined method [a-zA-Z0-9\\_]+::getFile\(\)#'
+        - '#Call to an undefined method [a-zA-Z0-9\\_]+::getConnection\(\)#'
+        - '#Call to an undefined method [a-zA-Z0-9\\_]+::getTableName\(\)#'
+        - '#Cannot access offset#'

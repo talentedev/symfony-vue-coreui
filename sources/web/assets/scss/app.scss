@@ -1,0 +1,99 @@
+// CoreUI Icons Set
+@import '~@coreui/icons/css/coreui-icons.min.css';
+/* Import Font Awesome Icons Set */
+$fa-font-path: '~font-awesome/fonts/';
+@import '~font-awesome/scss/font-awesome.scss';
+/* Import Simple Line Icons Set */
+$simple-line-font-path: '~simple-line-icons/fonts/';
+@import '~simple-line-icons/scss/simple-line-icons.scss';
+/* Import Flag Icons Set */
+@import '~flag-icon-css/css/flag-icon.min.css';
+/* Import Bootstrap Vue Styles */
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+// Import Vue Multiselect styles
+@import '~vue-multiselect/dist/vue-multiselect.min.css';
+// Import Vue Loading Overlay styles
+@import '~vue-loading-overlay/dist/vue-loading.css';
+// Import Main styles for this application
+@import 'vendor/style';
+
+body {
+    background-color: lightgray;
+}
+
+// Date picker style
+.vdp-datepicker {
+    .input-group {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        input {
+            width: 95px;
+            background-color: transparent;
+            border: none;
+        }
+        span {
+            padding: 8px 5px;
+            border-left: 1px solid #ddd;
+        }
+    }
+}
+
+// Reports List
+.custom-table {
+    .table {
+        th, td {
+            text-align: center;
+        }
+    }
+    .pagination {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// Productions List
+.productions {
+    .card-header .multiselect {
+        width: 256px;
+    }
+    .production-table {
+        th {
+            white-space: nowrap;
+        }
+        td.superior:after {
+            content: "Production is \Asuperior to capacity";
+            font-size: 11px;
+            color: #FF0000;
+            margin-top: 1px;
+            margin-left: 45px;
+            float: left;
+            position: relative;
+            top: -25px;
+            height: 0px;
+            white-space: pre;
+            line-height: 10px;
+        }
+    }
+    #add-commodity {
+        .multiselect, .multiselect__input, .multiselect__single {
+            font-size: 14px;
+        }
+    }
+}
+// Online Database
+.online-database {
+    .table-responsive-sm {
+        overflow: auto;
+    }
+    .table {
+        th {
+            width: 100px;
+        }
+    }
+    @media screen and (max-width: 576px) {
+      button {
+        margin-top: 15px;
+      }
+    }
+}

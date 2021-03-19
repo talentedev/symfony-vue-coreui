@@ -1,0 +1,30 @@
+.idea
+.env
+###> symfony/framework-bundle ###
+app/.env.local
+app/.env.*.local
+app/public/bundles/
+app/var/
+app/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/phpunit-bridge ###
+app/.phpunit
+app/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+
+###> squizlabs/php_codesniffer ###
+app/.phpcs-cache
+app/phpcs.xml
+###< squizlabs/php_codesniffer ###
+
+###> symfony/webpack-encore-bundle ###
+app/node_modules/
+app/public/build/
+app/npm-debug.log
+app/yarn-error.log
+###< symfony/webpack-encore-bundle ###

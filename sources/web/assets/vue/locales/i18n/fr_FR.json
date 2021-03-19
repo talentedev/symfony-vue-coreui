@@ -1,0 +1,192 @@
+{
+    "home": {
+        "welcome": "Welcome to the Web Members' extranet"
+    },
+    "navs": {
+        "home": "Accueil",
+        "user": "User",
+        "regions-countries": "Regions & countries",
+        "reports": "Reports",
+        "data-submission": "Data Submission",
+        "export-data": "Export Data",
+        "create-group": "Create new group",
+        "import-data": "Import new data",
+        "online-database": "Online Database",
+        "add-new-user": "Ajouter un nouveau utilisateur"
+    },
+    "headers": {
+        "about-us": "ABOUT US",
+        "staff": "STAFF",
+        "committees": "COMMITTEES",
+        "statistics": "Statistics Committee",
+        "cn-committee": "China Committee",
+        "hes-Committee": "HSE Committee",
+        "epd-division": "EPD Division",
+        "executive-board": "Executive Board",
+        "general-assembly": "General Assembly",
+        "supervisory-board": "Supervisory Board",
+        "officers": "OFFICERS",
+        "org-structure": "ORGANIZATIONAL STRUCTURE",
+        "policies": "POLICIES",
+        "about-manganese": "ABOUT MANGANESE",
+        "membership": "MEMBERSHIP",
+        "activities": "Web ACTIVITIES",
+        "hse-regulatory-affairs": "HSE & REGULATORY AFFAIRS",
+        "overview": "Overview",
+        "environment": "Environment",
+        "health": "Health",
+        "regulatory-affairs": "Regulatory Affairs",
+        "safety": "Safety",
+        "market-research": "MARKET RESEARCH",
+        "research-reports": "Public Reasearch Reports",
+        "trade-data": "Trade Data & Information",
+        "monthly-reports": "Monthly Reports",
+        "annual-reports": "Annual Reports",
+        "extra-info": "Extra Information",
+        "event-overview": "EVENTS OVERVIEW",
+        "annual-conference": "2019 Web 45th Annual Conference",
+        "upcoming-events": "Upcoming Events",
+        "library": "LIBRARY",
+        "contact": "CONTACT US",
+        "settings": "Settings",
+        "logout": "Logout"
+    },
+    "views": {
+        "global": {
+            "groups": "Groups",
+            "login": "Login",
+            "email": "Email",
+            "group": "Group",
+            "action": "Action",
+            "save": "Save",
+            "commodity": "Commodity",
+            "type": "Type",
+            "region": "Region",
+            "country": "Country",
+            "from": "From",
+            "to": "To",
+            "filter": "Filter",
+            "clear": "Clear all"
+        },
+        "user": {
+            "list": "User List",
+            "create": "Créer un utilisateur"
+        },
+        "report": {
+            "list": "Report List",
+            "upload": "Upload",
+            "category": "Category",
+            "sub-category": "Sub Category"
+        },
+        "submission": {
+            "before": "Production Before",
+            "select": "Select",
+            "add-company": "Add company",
+            "close-company": "Close company",
+            "relaunch-company": "Relaunch company",
+            "add-commodity": "Add commodity",
+            "stop-commodity": "Stop commodity",
+            "reopen-commodity": "Reopen commodity"
+        },
+        "group": {
+            "name": "Group Name",
+            "success": "New group is creared successfully!"
+        },
+        "import": {
+            "file": "File",
+            "choose-file": "Choose a file...",
+            "success": "New data is imported successfully!",
+            "fail": "We can't import new data successfully. Please try again!"
+        },
+        "online-db": {
+            "export-csv": "ExportCSV",
+            "export-xls": "ExportXLS"
+        }
+    },
+    "langs": {
+        "english": "Anglaise",
+        "french": "Française",
+        "chinese": "Chinoise"
+    },
+    "components": {
+        "input": {
+            "placeholder": [
+                { "username": "Username" },
+                { "email": "name@example.com" },
+                { "password": "Password" }
+            ]
+        },
+        "button": [
+            { "submit": "Submit" },
+            { "signin": "Sign In" },
+            { "signout": "Sign Out" },
+            { "reset": "Reset" }
+        ],
+        "checkbox": {
+            "label": [
+                { "langSwitch": "International" }
+            ]
+        },
+        "popup": [
+            {
+                "expired": {
+                    "title": "Warning",
+                    "desc": "Token Expired, Please login again",
+                    "confirm": "Yes",
+                    "cancel": "No"
+                }
+            }
+        ]
+    },
+    "errors": [
+        {
+            "code": "ER-0001",
+            "desc": "System Error",
+            "fix": "Please contact system admin"
+        },
+        {
+            "code": "ER-0002",
+            "desc": "Server Error",
+            "fix": "Server has encountered an internal error"
+        },
+        {
+            "code": "ER-0003",
+            "desc": "Network Error",
+            "fix": "Software caused connection abort"
+        }
+    ],
+    "network": {
+        "error": [
+            {
+                "status": "Error 400",
+                "type": "Bad Request",
+                "desc": "Your browser sent a request that this server could not understand"
+            },
+            {
+                "status": "Error 401",
+                "type": "Unauthorized",
+                "desc": "Access is denied due to invalid credentials"
+            },
+            {
+                "status": "Error 403",
+                "type": "Forbideen",
+                "desc": "You don't have permission to access"
+            },
+            {
+                "status": "Error 404",
+                "type": "Not Found",
+                "desc": "The page you are looking for does not exist"
+            },
+            {
+                "status": "Error 500",
+                "type": "Server Error",
+                "desc": "Http error 500 Internal Server Error"
+            },
+            {
+                "status": "Error 503",
+                "type": "Service Unavailable",
+                "desc": "Service temporarily unavailable"
+            }
+        ]
+    }
+}

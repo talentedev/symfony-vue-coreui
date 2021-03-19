@@ -1,0 +1,68 @@
+version: '2'
+
+services:
+
+  traefik:
+    image: traefik:1.7
+    command: --docker --docker.exposedbydefault=false
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  web:
+    image: talentedev/php:7.2-v2-apache-node10
+    labels:
+      - traefik.enable=true
+      - traefik.backend=web
+      - traefik.frontend.rule=Host:web.localhost
+    environment:
+      APACHE_DOCUMENT_ROOT: public/
+      PHP_INI_MEMORY_LIMIT: 1G
+      PHP_EXTENSION_XDEBUG: 1
+      PHP_EXTENSION_GD: 1
+      PHP_INI_MAX_EXECUTION_TIME: 3600
+      PHP_INI_UPLOAD_MAX_FILESIZE: 50M
+      PHP_INI_POST_MAX_SIZE: 50M
+      PHP_INI_MEMORY_LIMIT: -1
+      # Symfony
+      APP_ENV: dev
+      APP_SECRET: 
+      DATABASE_URL: mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@mysql:3306/${MYSQL_DATABASE}
+      STARTUP_COMMAND_1: composer install
+      STARTUP_COMMAND_2: yarn install
+      STARTUP_COMMAND_3: php bin/console doctrine:migrations:migrate --no-interaction
+      # SwiftMailer
+      MAILER_URL: ${MAILER_URL}
+      # Cron job
+      CRON_USER_1: 'root'
+      CRON_SCHEDULE_1: '0 0 1 * *'
+      CRON_COMMAND_1: php bin/console app:create-production
+    volumes:
+      - ./sources/web:/var/www/html:rw
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  phpmyadmin:
+     image: phpmyadmin/phpmyadmin:4.7
+     labels:
+       - traefik.enable=true
+       - traefik.backend=phpmyadmin
+       - traefik.frontend.rule=Host:phpmyadmin.web.localhost
+     environment:
+       PMA_HOST: mysql
+       PMA_USER: ${MYSQL_USER}
+       PMA_PASSWORD: ${MYSQL_PASSWORD}
+
+volumes:
+
+    mysql_data:
+      driver: local

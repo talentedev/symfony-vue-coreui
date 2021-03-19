@@ -1,0 +1,193 @@
+{
+    "home": {
+        "welcome": "Welcome to the Web Members' extranet"
+    },
+    "navs": {
+        "home": "主页",
+        "user": "用户",
+        "regions-countries": "地区 & 国家",
+        "reports": "报告",
+        "data-submission": "数据服从",
+        "export-data": "出口数据",
+        "create-group": "创建新组",
+        "import-data": "输入数据",
+        "online-database": "线上数据库",
+        "add-new-user": "添加新用户"
+    },
+    "headers": {
+        "about-us": "电解产品委员会",
+        "staff": "我们的团队",
+        "committees": "委员会",
+        "statistics": "统计委员会",
+        "cn-committee": "中国委员会",
+        "hes-Committee": "职业健康、安全和环境委员会",
+        "epd-division": "电解产品部",
+        "executive-board": "理事会",
+        "general-assembly": "会员大会",
+        "supervisory-board": "理事会",
+        "officers": "理事会",
+        "org-structure": "组织结构",
+        "policies": "政策",
+        "about-manganese": "关于锰",
+        "membership": "会员",
+        "activities": "国际锰协的活动",
+        "hse-regulatory-affairs": "职业健康、环境与安全及法规事务",
+        "overview": "概览",
+        "environment": "Environment",
+        "health": "健康",
+        "regulatory-affairs": "Regulatory Affairs",
+        "safety": "Safety",
+        "market-research": "市场研究",
+        "research-reports": "公共研究报告",
+        "trade-data": "贸易数据与信息",
+        "monthly-reports": "月度报告",
+        "annual-reports": "年度报告",
+        "extra-info": "其它报告",
+        "event-overview": "活动",
+        "annual-conference": "国际锰协2019年度会议",
+        "upcoming-events": "Upcoming Events",
+        "library": "所有出版物",
+        "contact": "联系我们",
+        "settings": "设置",
+        "logout": "登出",
+        "language": "语言"
+    },
+    "views": {
+        "global": {
+            "groups": "组",
+            "login": "登录",
+            "email": "电子邮件",
+            "group": "组",
+            "action": "行动",
+            "save": "保存",
+            "commodity": "商品",
+            "type": "类型",
+            "region": "区域",
+            "country": "国家",
+            "from": "从",
+            "to": "至",
+            "filter": "过滤",
+            "clear": "重启"
+        },
+        "user": {
+            "list": "用户列表",
+            "create": "创建用户"
+        },
+        "report": {
+            "list": "报告列表",
+            "upload": "上载",
+            "category": "类别",
+            "sub-category": "子类别"
+        },
+        "submission": {
+            "before": "之前",
+            "select": "选择",
+            "add-company": "加公司",
+            "close-company": "关闭公司",
+            "relaunch-company": "重新开公司",
+            "add-commodity": "加商品",
+            "stop-commodity": "关闭商品",
+            "reopen-commodity": "重新开商品"
+        },
+        "group": {
+            "name": "组名称",
+            "success": "新组成功创建！"
+        },
+        "import": {
+            "file": "文件",
+            "choose-file": "选择文件",
+            "success": "新数据导入成功！",
+            "fail": "新数据未导入失败！"
+        },
+        "online-db": {
+            "export-csv": "输出CSV",
+            "export-xls": "输出XLS"
+        }
+    },
+    "langs": {
+        "english": "英语",
+        "french": "法语",
+        "chinese": "简体中文"
+    },
+    "components": {
+        "input": {
+            "placeholder": [
+                { "username": "使用者名称" },
+                { "email": "name@example.com" },
+                { "password": "密码" }
+            ]
+        },
+        "button": [
+            { "submit": "提交" },
+            { "signin": "登入" },
+            { "signout": "登出" },
+            { "reset": "重设" }
+        ],
+        "checkbox": {
+            "label": [
+                { "langSwitch": "国际语系" }
+            ]
+        },
+        "popup": [
+            {
+                "expired": {
+                    "title": "警告",
+                    "desc": "凭证无效或过期, 请重新登入",
+                    "confirm": "确定",
+                    "cancel": "取消"
+                }
+            }
+        ]
+    },
+    "errors": [
+        {
+            "code": "ER-0001",
+            "desc": "系统发生错误",
+            "fix": "请联络系统管理员"
+        },
+        {
+            "code": "ER-0002",
+            "desc": "伺服器发生错误",
+            "fix": "服务器遇到内部错误"
+        },
+        {
+            "code": "ER-0003",
+            "desc": "网路发生错误",
+            "fix": "软件导致连接中止"
+        }
+    ],
+    "network": {
+        "error": [
+            {
+                "status": "错误 400",
+                "type": "错误的要求",
+                "desc": "由于明显的用户端错误，伺服器不能或不会处理该请求"
+            },
+            {
+                "status": "错误 401",
+                "type": "没授权",
+                "desc": "由于无效凭据，访问被拒绝"
+            },
+            {
+                "status": "错误 403",
+                "type": "拒绝或禁止存取",
+                "desc": "您没有权限访问"
+            },
+            {
+                "status": "错误 404",
+                "type": "找不到",
+                "desc": "您要查找的页面不存在"
+            },
+            {
+                "status": "错误 500",
+                "type": "服务器错误",
+                "desc": "内部服务器错误"
+            },
+            {
+                "status": "错误 503",
+                "type": "服务器无法使用",
+                "desc": "服务暂时不可用"
+            }
+        ]
+    }
+}

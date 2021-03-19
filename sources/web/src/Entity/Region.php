@@ -1,0 +1,61 @@
+<?php
+
+namespace App\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="region")
+ *
+ */
+class Region
+{
+    const DEFAULT = 1;
+
+    /**
+     * @ORM\Id()
+     * @ORM\GeneratedValue()
+     * @ORM\Column(type="integer")
+     */
+    private $id;
+
+    /**
+     * @ORM\Column(type="string", length=64)
+     */
+    private $name;
+
+    public function __construct()
+    {
+        // $this->countries = new ArrayCollection();
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return null|string
+     */
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     * @return Region
+     */
+    public function setName(string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+}
